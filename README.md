@@ -12,7 +12,12 @@ End-to-end retail analytics data warehouse project using:
 
 ## Architecture
 
-Coming soon.
+## Phase 1: Staging Layer
+
+- Built automated ETL pipeline using Python
+- Loaded Olist dataset into PostgreSQL staging tables
+- Standardized column names and structured ingestion process
+- Created reusable loader for multiple datasets
 
 ## Tech Stack
 
