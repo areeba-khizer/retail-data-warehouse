@@ -19,6 +19,13 @@ End-to-end retail analytics data warehouse project using:
 - Standardized column names and structured ingestion process
 - Created reusable loader for multiple datasets
 
+
+## Phase 2: Data Warehouse Layer
+
+- Designed and implemented star schema architecture
+- Built fact_orders table for transactional analysis
+- Created dimension tables for customers, products, sellers, and dates
+- Implemented SQL-based transformation pipeline in PostgreSQL
 ## Tech Stack
 
 - Python
