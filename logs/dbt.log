@@ -1,0 +1,60 @@
+[0m09:57:53.938271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099f3380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10acf6fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10acf7110>]}
+
+
+============================== 09:57:53.940552 | f5e65a3e-feee-4c42-a2b9-12d87001039c ==============================
+[0m09:57:53.940552 [info ] [MainThread]: Running with dbt=1.12.0-b1
+[0m09:57:53.940811 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'no_print': 'None', 'fail_fast': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'write_json': 'True', 'profiles_dir': '/Users/areebakhizer/.dbt', 'use_colors': 'True', 'static_parser': 'True', 'log_path': 'logs', 'partial_parse': 'True', 'target_path': 'None', 'version_check': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'debug': 'False', 'invocation_command': 'dbt init retail_dbt', 'indirect_selection': 'eager', 'warn_error': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:57:53.946877 [info ] [MainThread]: Creating dbt configuration folder at /Users/areebakhizer/.dbt
+[0m09:57:53.947628 [debug] [MainThread]: Starter project path: /Users/areebakhizer/retail-data-warehouse/venv/lib/python3.14/site-packages/dbt/include/starter_project
+[0m09:57:53.950371 [info ] [MainThread]: Setting up your profile.
+[0m10:03:48.746535 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m10:03:48.754162 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/areebakhizer/retail-data-warehouse/venv/lib/python3.14/site-packages/dbt/cli/requires.py", line 184, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/areebakhizer/retail-data-warehouse/venv/lib/python3.14/site-packages/dbt/cli/requires.py", line 130, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/areebakhizer/retail-data-warehouse/venv/lib/python3.14/site-packages/dbt/cli/main.py", line 499, in init
+    results = task.run()
+  File "/Users/areebakhizer/retail-data-warehouse/venv/lib/python3.14/site-packages/dbt/task/init.py", line 360, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/areebakhizer/retail-data-warehouse/venv/lib/python3.14/site-packages/dbt/task/init.py", line 264, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/areebakhizer/retail-data-warehouse/venv/lib/python3.14/site-packages/dbt/task/init.py", line 181, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/areebakhizer/retail-data-warehouse/venv/lib/python3.14/site-packages/dbt/task/init.py", line 165, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/Users/areebakhizer/retail-data-warehouse/venv/lib/python3.14/site-packages/dbt/task/init.py", line 131, in generate_target_from_input
+    target[key] = click.prompt(
+                  ~~~~~~~~~~~~^
+        text, default=default, hide_input=hide_input, type=type
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/areebakhizer/retail-data-warehouse/venv/lib/python3.14/site-packages/click/termui.py", line 218, in prompt
+    value = prompt_func(prompt)
+  File "/Users/areebakhizer/retail-data-warehouse/venv/lib/python3.14/site-packages/click/termui.py", line 201, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m10:03:48.814929 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 354.90942, "process_in_blocks": "0", "process_kernel_time": 0.143964, "process_mem_max_rss": "141180928", "process_out_blocks": "0", "process_user_time": 0.851413}
+[0m10:03:48.816081 [debug] [MainThread]: Command `dbt init` failed at 10:03:48.815858 after 354.91 seconds
+[0m10:03:48.816834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad9f5c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae39910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b394050>]}
+[0m10:03:48.817454 [debug] [MainThread]: Flushing usage events
+[0m10:03:49.238718 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:03:55.161953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4ab380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7aefd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7af110>]}
+
+
+============================== 10:03:55.164217 | 9f4f4e7a-8642-426c-8f60-ffeea71dc49c ==============================
+[0m10:03:55.164217 [info ] [MainThread]: Running with dbt=1.12.0-b1
+[0m10:03:55.164476 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'profiles_dir': '/Users/areebakhizer/.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'no_print': 'None', 'target_path': 'None', 'write_json': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'fail_fast': 'False', 'introspect': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init retail_dbt', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'cache_selected_only': 'False', 'empty': 'None', 'partial_parse': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False'}
+[0m10:03:55.171921 [info ] [MainThread]: A project called retail_dbt already exists here.
+[0m10:03:55.173151 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.043725584, "process_in_blocks": "0", "process_kernel_time": 0.104989, "process_mem_max_rss": "141918208", "process_out_blocks": "0", "process_user_time": 0.802607}
+[0m10:03:55.173390 [debug] [MainThread]: Command `dbt init` succeeded at 10:03:55.173344 after 0.04 seconds
+[0m10:03:55.173543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b6136f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b607530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7e7bd0>]}
+[0m10:03:55.173683 [debug] [MainThread]: Flushing usage events
+[0m10:03:55.539587 [debug] [MainThread]: An error was encountered while trying to flush usage events

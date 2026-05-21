@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: warehouse
+    schema: warehouse
+    tables:
+      - name: fact_orders
+      - name: dim_customers
+      - name: dim_products
+      - name: dim_sellers
+      - name: dim_date
