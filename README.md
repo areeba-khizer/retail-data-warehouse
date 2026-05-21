@@ -26,6 +26,19 @@ End-to-end retail analytics data warehouse project using:
 - Built fact_orders table for transactional analysis
 - Created dimension tables for customers, products, sellers, and dates
 - Implemented SQL-based transformation pipeline in PostgreSQL
+
+
+## Phase 3: Analytics KPI Layer
+
+Created analytics views for:
+
+- Monthly revenue trends
+- Top-performing product categories
+- Customer lifetime value (LTV)
+- Seller performance analysis
+- Repeat customer identification
+
+Implemented reusable SQL views for dashboard-ready reporting.
 ## Tech Stack
 
 - Python
