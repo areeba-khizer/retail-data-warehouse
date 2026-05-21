@@ -38,6 +38,24 @@ Created analytics views for:
 - Seller performance analysis
 - Repeat customer identification
 
+## Phase 4: dbt Setup (Analytics Engineering Layer)
+
+Configured dbt to transform the PostgreSQL data warehouse into a modern analytics engineering workflow.
+
+Created a structured dbt project connected to the `retail_dw` database to enable modular SQL development and scalable data modeling.
+
+### Key Setup Steps:
+- Installed and configured `dbt-postgres` adapter
+- Initialized dbt project (`retail_dbt`)
+- Created and configured `~/.dbt/profiles.yml` for PostgreSQL connection
+- Verified successful connection using `dbt debug`
+
+### Outcome:
+- dbt environment successfully set up and connected to the warehouse
+- Foundation established for modular SQL transformations
+- Project prepared for staging, warehouse, and marts layer modeling
+- Enabled future support for testing, documentation, and lineage tracking
+
 Implemented reusable SQL views for dashboard-ready reporting.
 ## Tech Stack
 
