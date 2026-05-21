@@ -101,6 +101,53 @@ These models convert raw transactional data into meaningful business KPIs.
 
 ---
 
+## Phase 6: Data Testing & Documentation (dbt)
+
+Implemented a data quality and documentation layer using dbt to improve reliability, transparency, and maintainability of the analytics pipeline.
+
+This phase focused on ensuring that all transformed data models are validated, documented, and traceable through automated tooling.
+
+---
+
+### Data Testing (Quality Assurance)
+
+Added dbt tests to validate critical business logic and ensure data integrity across core models.
+
+- Implemented `not_null` tests on key business columns in fact tables
+- Added data validation checks for customer, order, and revenue fields
+- Removed default example models and tests to maintain a clean production structure
+- Ensured only business-relevant models are included in testing suite
+
+---
+
+### Documentation (dbt Docs)
+
+Generated automated documentation for all dbt models using built-in dbt documentation features.
+
+- Documented core and mart layer models
+- Included column-level descriptions and metadata
+- Enabled visibility into model relationships and dependencies
+
+---
+
+### Lineage & Data Transparency
+
+Enabled dbt documentation server to visualize full data lineage across the pipeline.
+
+- Tracked flow from staging → core → marts
+- Provided interactive lineage graph for all transformations
+- Improved debugging and pipeline transparency
+
+---
+
+### Outcome
+
+- Established data quality assurance layer using automated tests
+- Created self-documenting analytics pipeline
+- Enabled full visibility into data transformations via lineage graph
+- Improved trust and reliability of analytics outputs
+- Refactored project into production-ready dbt structure
+
 Implemented reusable SQL views for dashboard-ready reporting.
 ## Tech Stack
 
