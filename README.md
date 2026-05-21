@@ -56,6 +56,51 @@ Created a structured dbt project connected to the `retail_dw` database to enable
 - Project prepared for staging, warehouse, and marts layer modeling
 - Enabled future support for testing, documentation, and lineage tracking
 
+## Phase 5: dbt Models (Core + Marts Layer)
+
+Built a modular dbt transformation layer on top of the PostgreSQL data warehouse to implement a modern analytics engineering workflow.
+
+This phase introduced structured SQL modeling using dbt, separating business logic into reusable and scalable components.
+
+---
+
+### Core Models (Warehouse Layer in dbt)
+Created core transformation models using `ref()` dependencies to ensure modular and maintainable SQL logic.
+
+- Built `fact_orders` model for transactional data processing
+- Standardized calculations such as total order value
+- Established dependency-based transformations using dbt sources
+
+---
+
+### Marts Layer (Business Analytics Models)
+Developed business-ready datasets for analytical reporting and dashboarding:
+
+- Monthly revenue trends mart
+- Customer lifetime value (LTV) mart
+- Product performance mart
+
+These models convert raw transactional data into meaningful business KPIs.
+
+---
+
+### Key dbt Features Used
+- `ref()` for model dependencies
+- `source()` for warehouse table references
+- Modular SQL structure (core → marts)
+- Schema-based organization (analytics layer)
+
+---
+
+### Outcome
+- Successfully implemented dbt transformation pipeline
+- Created reusable and scalable analytics models
+- Separated business logic into structured layers
+- Enabled automated SQL dependency management
+- Prepared project for testing, documentation, and lineage tracking
+
+---
+
 Implemented reusable SQL views for dashboard-ready reporting.
 ## Tech Stack
 
