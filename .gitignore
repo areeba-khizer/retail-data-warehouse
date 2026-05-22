@@ -1,6 +1,26 @@
+# Python
 venv/
 __pycache__/
-.env
 *.pyc
+
+# Airflow
+airflow.db
+logs/
+*.pid
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Mac
 .DS_Store
-data/raw/logs/
+
+# Environment
+.env
+
+# VS Code
+.vscode/
+
+# Secrets
+profiles.yml
